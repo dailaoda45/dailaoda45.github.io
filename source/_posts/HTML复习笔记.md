@@ -75,3 +75,6 @@ title: HTML复习笔记
 |    \<dd>……\</dd>    | 定义定义的描述 ||
 |    \<div>……\</div>    | 定义文档中的分区或节 ||
 |    \<span>……\</span>    | 定义 span，用来组合文档中的行内元素 ||
+
+更多样式可见：[HTML教程](https://www.w3school.com.cn/html/index.asp)
+
