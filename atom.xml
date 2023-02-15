@@ -6,7 +6,7 @@
   <link href="https://dailaoda45.github.io/atom.xml" rel="self"/>
   
   <link href="https://dailaoda45.github.io/"/>
-  <updated>2023-02-14T10:33:15.707Z</updated>
+  <updated>2023-02-15T02:29:05.996Z</updated>
   <id>https://dailaoda45.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>博客更新与备份备忘录</title>
+    <link href="https://dailaoda45.github.io/2023/02/15/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E4%B8%8E%E5%A4%87%E4%BB%BD%E5%A4%87%E5%BF%98%E5%BD%95/"/>
+    <id>https://dailaoda45.github.io/2023/02/15/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E4%B8%8E%E5%A4%87%E4%BB%BD%E5%A4%87%E5%BF%98%E5%BD%95/</id>
+    <published>2023-02-15T02:00:00.000Z</published>
+    <updated>2023-02-15T02:29:05.996Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="博客更新与备份备忘录"><a href="#博客更新与备份备忘录" class="headerlink" title="博客更新与备份备忘录"></a>博客更新与备份备忘录</h1><p>建这个博客是因为自己的兴趣需求，希望有一个地方可以记录，并查看的在线平台。因为自己不是开发人员。全套教程都是照搬B站视频搭建以及搜索到的将备份信息放在github.io的source分支下。自己博文更新不频繁，年纪大了，记忆力也不好每一次都会忘记更新部署新的博文操作步骤，备份步骤每次都要吧教程翻出来再看一遍。所以这几记录一下。</p><p><strong>首先是更新博文</strong></p><p>1、将写好的MD文件放在source/_post/目录下。</p><p>2、然后一次运行下面这些命令</p><p><code>hexo clean</code></p><p>清除缓存文件 (<code>db.json</code>) 和已生成的静态文件 (<code>public</code>)。在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p><p><code>hexo g</code>生成静态文件。</p><p><code>hexo d</code>文件生成后立即部署网站，部署或默认部署只github的master分支。</p><p><strong>接下来是备份</strong></p><p>github上有两个分支一个是master用来存放静态文件，一个是source用来存放资源文件，主题设置等。</p><p>在blog总目录下运行git bash</p><p>git status</p><p><code>git add .</code> git 添加所有修改的文件</p><p><code>git commit -m &quot;此次提交的备注&quot;</code> </p><p><code>git push origin master:source</code>推送至备份前提是github中source分支已设置为默认分支否则需要推送至指定的分支例如git push &lt;远程主机名&gt; &lt;本地分支名&gt;:&lt;远程分支名&gt;</p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;博客更新与备份备忘录&quot;&gt;&lt;a href=&quot;#博客更新与备份备忘录&quot; class=&quot;headerlink&quot; title=&quot;博客更新与备份备忘录&quot;&gt;&lt;/a&gt;博客更新与备份备忘录&lt;/h1&gt;&lt;p&gt;建这个博客是因为自己的兴趣需求，希望有一个地方可以记录，并查看的在线平台。因</summary>
+      
+    
+    
+    
+    <category term="文|技" scheme="https://dailaoda45.github.io/categories/%E6%96%87-%E6%8A%80/"/>
+    
+    
+    <category term="记录" scheme="https://dailaoda45.github.io/tags/%E8%AE%B0%E5%BD%95/"/>
+    
+  </entry>
   
   <entry>
     <title>我想留在深圳</title>

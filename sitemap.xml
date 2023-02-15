@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://dailaoda45.github.io/2023/02/15/%E5%8D%9A%E5%AE%A2%E6%9B%B4%E6%96%B0%E4%B8%8E%E5%A4%87%E4%BB%BD%E5%A4%87%E5%BF%98%E5%BD%95/</loc>
+    
+    <lastmod>2023-02-15</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://dailaoda45.github.io/2023/02/14/%E6%88%91%E6%83%B3%E7%95%99%E5%9C%A8%E6%B7%B1%E5%9C%B3/</loc>
     
     <lastmod>2023-02-14</lastmod>
@@ -123,7 +130,7 @@
 
   <url>
     <loc>https://dailaoda45.github.io/</loc>
-    <lastmod>2023-02-14</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -131,14 +138,21 @@
   
   <url>
     <loc>https://dailaoda45.github.io/tags/%E6%97%A5%E8%AE%B0/</loc>
-    <lastmod>2023-02-14</lastmod>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>https://dailaoda45.github.io/tags/%E5%8F%99%E8%BF%B0/</loc>
-    <lastmod>2023-02-14</lastmod>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dailaoda45.github.io/tags/%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -147,7 +161,14 @@
   
   <url>
     <loc>https://dailaoda45.github.io/categories/%E6%96%87/</loc>
-    <lastmod>2023-02-14</lastmod>
+    <lastmod>2023-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://dailaoda45.github.io/categories/%E6%96%87-%E6%8A%80/</loc>
+    <lastmod>2023-02-15</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
