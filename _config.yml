@@ -105,7 +105,7 @@ theme: butterfly
 deploy:
   type: git
 ## 使用token进行部署https://token@github.com/dailaoda45/dailaoda45.github.io.git
-  repo: https://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@github.com/dailaoda45/dailaoda45.github.io.git
+  repo: https://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@github.com/dailaoda45/dailaoda45.github.io.git
   branch: master
 backup:
   type: git
