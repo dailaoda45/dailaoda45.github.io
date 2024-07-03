@@ -104,7 +104,8 @@ theme: butterfly
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repo: https://github.com/dailaoda45/dailaoda45.github.io.git
+  # 使用token进行部署https://token@github.com/dailaoda45/dailaoda45.github.io.git
+  repo: https://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@github.com/dailaoda45/dailaoda45.github.io.git
   branch: master
 backup:
   type: git
