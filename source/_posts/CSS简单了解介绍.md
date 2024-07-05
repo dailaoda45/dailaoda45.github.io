@@ -1,6 +1,10 @@
 ---
 
 title: CSS简单了解介绍
+author: 戴昌益
+date: 2022-12-30
+tags: [学习]
+categories: 文
 ---
 
 # CSS简单了解介绍
