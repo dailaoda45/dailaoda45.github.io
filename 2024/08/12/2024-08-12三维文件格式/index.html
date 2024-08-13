@@ -1,0 +1,204 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>三维文件格式 | 梦想驿站</title><meta name="keywords" content="学习"><meta name="author" content="戴昌益"><meta name="copyright" content="戴昌益"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><meta name="description" content="三维文件格式三维软件之间互相导入导出一般会涉及到一些格式不兼容的问题，这里就给大家普及一下这些常用的三维文件格式。不同的格式有着不同的定位及用处，有开源的也有商业的。目前很多三维软件之间互导迫在眉睫，无论是使用什么三维软件确保文件能够在多个软件之间链接成为了必须马上解决的事情。 .abc特效工作室： ILM、Sony Pictures与Imageworks, 共同开发了一个开放源码系统，目标是解决">
+<meta property="og:type" content="article">
+<meta property="og:title" content="三维文件格式">
+<meta property="og:url" content="https://dailaoda45.github.io/2024/08/12/2024-08-12%E4%B8%89%E7%BB%B4%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/index.html">
+<meta property="og:site_name" content="梦想驿站">
+<meta property="og:description" content="三维文件格式三维软件之间互相导入导出一般会涉及到一些格式不兼容的问题，这里就给大家普及一下这些常用的三维文件格式。不同的格式有着不同的定位及用处，有开源的也有商业的。目前很多三维软件之间互导迫在眉睫，无论是使用什么三维软件确保文件能够在多个软件之间链接成为了必须马上解决的事情。 .abc特效工作室： ILM、Sony Pictures与Imageworks, 共同开发了一个开放源码系统，目标是解决">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://images.shejidaren.com/wp-content/uploads/2014/07/085627fSu.jpg">
+<meta property="article:published_time" content="2024-08-11T16:00:00.000Z">
+<meta property="article:modified_time" content="2024-08-13T03:35:41.977Z">
+<meta property="article:author" content="戴昌益">
+<meta property="article:tag" content="学习">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://images.shejidaren.com/wp-content/uploads/2014/07/085627fSu.jpg"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://dailaoda45.github.io/2024/08/12/2024-08-12%E4%B8%89%E7%BB%B4%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: {"limitCount":50,"languages":{"author":"作者: 戴昌益","link":"链接: ","source":"来源: 梦想驿站","info":"著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。"}},
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    jQuery: 'https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js',
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+    },
+    fancybox: {
+      js: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css'
+    }
+  },
+  isPhotoFigcaption: true,
+  islazyload: false,
+  isanchor: false
+};
+
+var saveToLocal = {
+  set: function setWithExpiry(key, value, ttl) {
+    const now = new Date()
+    const expiryDay = ttl * 86400000
+    const item = {
+      value: value,
+      expiry: now.getTime() + expiryDay,
+    }
+    localStorage.setItem(key, JSON.stringify(item))
+  },
+
+  get: function getWithExpiry(key) {
+    const itemStr = localStorage.getItem(key)
+
+    if (!itemStr) {
+      return undefined
+    }
+    const item = JSON.parse(itemStr)
+    const now = new Date()
+
+    if (now.getTime() > item.expiry) {
+      localStorage.removeItem(key)
+      return undefined
+    }
+    return item.value
+  }
+}
+
+// https://stackoverflow.com/questions/16839698/jquery-getscript-alternative-in-native-javascript
+const getScript = url => new Promise((resolve, reject) => {
+  const script = document.createElement('script')
+  script.src = url
+  script.async = true
+  script.onerror = reject
+  script.onload = script.onreadystatechange = function() {
+    const loadState = this.readyState
+    if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+    script.onload = script.onreadystatechange = null
+    resolve()
+  }
+  document.head.appendChild(script)
+})</script><script id="config_change">var GLOBAL_CONFIG_SITE = { 
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-08-13 11:35:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(function () {  window.activateDarkMode = function () {
+    document.documentElement.setAttribute('data-theme', 'dark')
+    if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+    }
+  }
+  window.activateLightMode = function () {
+    document.documentElement.setAttribute('data-theme', 'light')
+   if (document.querySelector('meta[name="theme-color"]') !== null) {
+      document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+    }
+  }
+  const autoChangeMode = 'false'
+  const t = saveToLocal.get('theme')
+  if (autoChangeMode === '1') {
+    const isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+    const isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+    const isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+    const hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+    if (t === undefined) {
+      if (isLightMode) activateLightMode()
+      else if (isDarkMode) activateDarkMode()
+      else if (isNotSpecified || hasNoSupport) {
+        const now = new Date()
+        const hour = now.getHours()
+        const isNight = hour <= 6 || hour >= 18
+        isNight ? activateDarkMode() : activateLightMode()
+      }
+      window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+        if (saveToLocal.get('theme') === undefined) {
+          e.matches ? activateDarkMode() : activateLightMode()
+        }
+      })
+    } else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else if (autoChangeMode === '2') {
+    const now = new Date()
+    const hour = now.getHours()
+    const isNight = hour <= 6 || hour >= 18
+    if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+    else if (t === 'light') activateLightMode()
+    else activateDarkMode()
+  } else {
+    if (t === 'dark') activateDarkMode()
+    else if (t === 'light') activateLightMode()
+  }const asideStatus = saveToLocal.get('aside-status')
+if (asideStatus !== undefined) {
+   if (asideStatus === 'hide') {
+     document.documentElement.classList.add('hide-aside')
+   } else {
+     document.documentElement.classList.remove('hide-aside')
+   }
+}})()</script><meta name="generator" content="Hexo 5.3.0"><link rel="alternate" href="/atom.xml" title="梦想驿站" type="application/atom+xml">
+</head><body><div id="web_bg"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="author-avatar"><img class="avatar-img" src="/img/avatar.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data"><div class="data-item is-center"><div class="data-item-link"><a href="/archives/"><div class="headline">文章</div><div class="length-num">20</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/tags/"><div class="headline">标签</div><div class="length-num">9</div></a></div></div><div class="data-item is-center"><div class="data-item-link"><a href="/categories/"><div class="headline">分类</div><div class="length-num">3</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url(http://images.shejidaren.com/wp-content/uploads/2014/07/085627fSu.jpg)"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">梦想驿站</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 链接</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">三维文件格式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-08-11T16:00:00.000Z" title="发表于 2024-08-12 00:00:00">2024-08-12</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-08-13T03:35:41.977Z" title="更新于 2024-08-13 11:35:41">2024-08-13</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E6%96%87/">文</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="三维文件格式"><a href="#三维文件格式" class="headerlink" title="三维文件格式"></a><strong>三维文件格式</strong></h2><p>三维软件之间互相导入导出一般会涉及到一些格式不兼容的问题，这里就给大家普及一下这些常用的三维文件格式。不同的格式有着不同的定位及用处，有开源的也有商业的。目前很多三维软件之间互导迫在眉睫，无论是使用什么三维软件确保文件能够在多个软件之间链接成为了必须马上解决的事情。</p>
+<h2 id="abc"><a href="#abc" class="headerlink" title=".abc"></a><strong>.abc</strong></h2><p>特效工作室： ILM、Sony Pictures与Imageworks, 共同开发了一个开放源码系统，目标是解决特效界共同的问题, 如何可以共享复杂的动态场景, 跨越不同的软体之间， 这个格式命名为Alembic ，英文直译为蒸馏机。本质上就是一个CG交换格式, 专注于有效地储存, 共享动画与特效场景, 跨越不同的应用程式或是软体, 包含了商业贩售的软体或是公司内部开发的软体, 客制化的工具组。详情：《<a target="_blank" rel="noopener" href="http://www.bgteach.com/article/131">为什么 CG 行业需要 Alembic（.abc） 通用格式</a>》。</p>
+<hr>
+<p><strong>.abc 格式，中文名称：蒸馏机 - 支持动画、粒子等！</strong>bake三维场景的模型、流体、动画、特效等数据，输出输入到其他三维软件。注意是 bake（烘焙），有可能在导入其他三维软件中无法再二次编辑，比如：Rig、流体烟雾模拟等。不必多说，ABC将会是三维软件交互的王者。</p>
+<h2 id="glTF"><a href="#glTF" class="headerlink" title=".glTF"></a><strong>.glTF</strong></h2><p>glTF是一种可以减少3D格式中与渲染无关的冗余数据并且在更加适合OpenGL簇加载的一种3D文件格式。glTF的提出是源自于3D工业和媒体发展的过程中，对3D格式统一化的急迫需求。如果用一句话来描述：glTF 就是三维文件的 JPEG ，三维格式的 MP3。在没有glTF的时候，大家都要花很长的的时间来处理模型的载入。很多的游戏引擎或者工控渲染引擎，都使用的是插件的方式来载入各种格式的模型。可是，各种格式的模型都包含了很多无关的信息。就glTF格式而言，虽然以前有很多3D格式，但是各种3D模型渲染程序都要处理很多种的格式。对于那些对载入格式不是那么重要的软件，可以显著减少代码量，所以也有人说，最大的受益者是那些对程序大小敏感的3D Web渲染引擎，只需要很少的代码就可以顺利地载入各种模型了。此外，glTF是对近二十年来各种3D格式的总结，使用最优的数据结构，来保证最大的兼容性以及可伸缩性。这就好比是本世纪初xml的提出。glTF使用json格式进行描述，也可以编译成二进制的内容：bglTF。glTF可以包括场景、摄像机、动画等，也可以包括网格、材质、纹理，甚至包括了渲染技术（technique）、着色器以及着色器程序。同时由于json格式的特点，它支持预留一般以及特定供应商的扩展。</p>
+<hr>
+<p><strong>.glTF 格式， - 支持动画等！</strong>.gITF 2.0 格式逐步的完成了 WebGL 的布局，也成为了这个领域的专用格式，随着发展游戏领域的应用也会越来越广泛。官网细节：<a target="_blank" rel="noopener" href="https://www.khronos.org/gltf/">gltf</a></p>
+<h2 id="fbx"><a href="#fbx" class="headerlink" title=".fbx"></a><strong>.fbx</strong></h2><p>FBX 是 FilmBoX 这套软件所使用的格式，后改称 Motionbuilder。因为Motionbuilder扮演的是动作制作的平台，所以在前端的modeling和后端的rendering也都有赖于其它软件的配合，所以Motionbuilder在档案的转换上自然下了一番功夫。FBX最大的用途是用在诸如在 Max、Maya、Softimage 等软件间进行模型、材质、动作和摄影机信息的互导，这样就可以发挥 Max 和 Maya 等软件的优势。可以说，FBX 方案是非常好的互导方案。</p>
+<hr>
+<p><strong>. fbx 格式，Autodesk 家族格式 - 支持动画！</strong>这是一个商业的格式，兼容最好的当属 Autodesk 家族的软件了。fbx 也开放给了第三方软件，但总是感觉除了他自己的软件之外或多或少的都有解决不完的问题。 毋庸置疑，FBX 现在是最受欢迎的格式。</p>
+<h2 id="bvh"><a href="#bvh" class="headerlink" title=".bvh"></a><strong>.bvh</strong></h2><p>BVH 是BioVision等设备对人体运动进行捕获后产生文件格式的文件扩展名。BVH文件包含角色的骨骼和肢体关节旋转数据。BVH 是一种通用的人体特征动画文件格式,，广泛地被当今流行的各种动画制作软件支持。通常可从记录人类行为运动的运动捕获硬件获得。</p>
+<hr>
+<p><strong>. bvh 格式， 动作捕捉通用格式 - 骨骼动画数据！</strong>捕捉后的文件可以重复利用，应用在不同的角色骨骼驱动上制作动画。制作游戏、影视等方面的应用广泛。</p>
+<h2 id="obj"><a href="#obj" class="headerlink" title=".obj"></a><strong>.obj</strong></h2><p>OBJ文件是Alias|Wavefront公司为它的一套基于工作站的3D建模和动画软件”Advanced Visualizer”开发的一种标准3D模型文件格式，很适合用于3D软件模型之间的互导。目前几乎所有知名的3D软件都支持OBJ文件的读写。OBJ文件是一种文本文件，可以直接用写字板打开进行查看和编辑修改。</p>
+<hr>
+<p><strong>. obj 格式， 静态多边形模型 - 附带 UV 信息及材质路径！</strong>不包含动画、材质特性、贴图路径、动力学、粒子等信息。主要支持多边形(Polygons)模型。是最受欢迎的格式。</p>
+<h2 id="dae"><a href="#dae" class="headerlink" title=".dae"></a><strong>.dae</strong></h2><p>DAE 是纯文本的模型格式，其本质就是一个单纯的xml文件。相比fbx，对dae格式模型的载入我们拥有非常高的自由控制，这也是最复杂的地方。基本上，dae文件内一开始就把数据分成了好几大块。对我们来说最为有用的是VisualScenes(包含场景骨骼节点树)、Nodes(与VisualScenes类似，两者或互为补充)、Geometries（网格数据）、Materials/Effects/Images（材质相关信息）、Controllers（骨骼信息数据）、Animations（动画数据）、AnimationClips（全局的动画信息），其中静态模型一般也就包括VisualScenes和Geometries。</p>
+<hr>
+<p><strong>. dae 格式， FBX 的代替品 -</strong> <strong>Collada DAE需要自行下载安装**</strong>！**Google 地图便是使用的 DAE 格式。</p>
+<h2 id="stl"><a href="#stl" class="headerlink" title=".stl"></a><strong>.stl</strong></h2><p>STL 文件是在计算机图形应用系统中，用于表示三角形网格的一种文件格式。 它的文件格式非常简单， 应用很广泛。STL是最多快速原型系统所应用的标准文件类型。STL是用三角网格来表现3D CAD模型。在STL文件中的三角面片的信息单元 facet 是一个带矢量方向的三角面片，STL三维模型就是由一系列这样的三角面片构成。</p>
+<hr>
+<p><strong>. stl 格式，三维打印的通用格式 - 三角面静态模型！</strong>文件格式简单，只能描述三维物体的几何信息，不支持颜色材质等信息，是计算机图形学处理CG、数字几何处理如CAD、 数字几何工业应用, 如三维打印机支持的最常见文件格式。</p>
+<h2 id="3ds"><a href="#3ds" class="headerlink" title=".3ds"></a><strong>.3ds</strong></h2><p>3DS 文件越来越不受欢迎了。比较早的一种三维格式，三角面，最早游戏模型应用比较广泛。由于后期导入软件的不可编辑性、难以二次编辑现在逐渐的远离了我们的视线。</p>
+<hr>
+<p><strong>. 3ds 格式 - 三角面静态模型**</strong>！**文件格式简单，现在几乎都以淘汰！应该在一些老的项目应用上才有可能会用到。</p>
+<h2 id="ply"><a href="#ply" class="headerlink" title=".ply"></a><strong>.ply</strong></h2><p>PLY 是一种电脑档案格式，全名为多边形档案（Polygon File Format）或 斯坦福三角形档案（Stanford Triangle Format）。 该格式主要用以储存立体扫描结果的三维数值，透过多边形片面的集合描述三维物体，与其他格式相较之下这是较为简单的方法。它可以储存的资讯包含颜色、透明度、表面法向量、材质座标与资料可信度，并能对多边形的正反两面设定不同的属性。在档案内容的储存上PLY有两种版本，分别是纯文字（ASCII）版本与二元码（binary）版本，其差异在储存时是否以ASCII编码表示元素资讯。</p>
+<hr>
+<p><strong>. ply 格式 - 静态多边形模型 - OBJ 格式的升级版！</strong>PLY格式受 Wavefront .obj 格式的启发，但改进了Obj格式所缺少的对任意属性及群组的扩充性。因此PLY格式发明了”property”及”element”这两个关键词，来概括“顶点、面、相关资讯、群组”的概念。</p>
+<h2 id="psk"><a href="#psk" class="headerlink" title=".psk"></a><strong>.psk</strong></h2><p>Psk 是 Epic Games Unreal Engine 的格式，也就是大名鼎鼎的虚幻游戏引擎的模型格式。虚幻游戏模型提取出来的就是 psk 格式。</p>
+<hr>
+<p><strong>. psk 格式 - Unral Engine 格式 - 带骨骼动画的模型！</strong> psk 是 一个比较特殊的格式，通常情况下是原来提取游戏模型使用的。最终生成的基于虚幻引擎的游戏打包成这个格式的模型。</p>
+<h2 id="x3d"><a href="#x3d" class="headerlink" title=".x3d"></a><strong>.x3d</strong></h2><p>X3D 是一种专为万维网而设计的三维图像标记语言。全称可扩展三维（语言），是由Web3D联盟设计的，是 VRML 标准的最新的升级版本。 X3D 基于 XML 格式开发，所以可以直接使用 XML DOM 文档树、XML Schema 校验等技术和相关的 XML 编辑工具。目前 X3D 已经是通过 ISO 认证的国际标准。</p>
+<hr>
+<p><strong>. ply 格式 - Web3D 使用较多的格式 - 少量动画 WebGL 支持</strong>！支持多纹理和多遍绘制、支持 Shader 着色、支持多渲染目标(MRT)、支持几何实例(Geometry Instance)。</p>
+<h2 id="dxf"><a href="#dxf" class="headerlink" title=".dxf"></a><strong>.dxf</strong></h2><p>DXF 是一种开放的矢量数据格式，可以分为两类：ASCII格式和二进制格式；ASCII具有可读性好的特点，但占用的空间较大；二进制格式则占用的空间小、读取速度快。各种 CAD 软件中 DXF 被广泛使用，成为事实上的标准。绝大多数CAD系统都能读入或输出DXF文件。</p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">文章作者: </span><span class="post-copyright-info"><a href="mailto:undefined">戴昌益</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">文章链接: </span><span class="post-copyright-info"><a href="https://dailaoda45.github.io/2024/08/12/2024-08-12%E4%B8%89%E7%BB%B4%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/">https://dailaoda45.github.io/2024/08/12/2024-08-12%E4%B8%89%E7%BB%B4%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://dailaoda45.github.io" target="_blank">梦想驿站</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E5%AD%A6%E4%B9%A0/">学习</a></div><div class="post_share"><div class="social-share" data-image="http://images.shejidaren.com/wp-content/uploads/2014/07/085627fSu.jpg" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/social-share.js/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/social-share.js/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/2024/07/15/2024-07-15%E8%AE%B0%E5%BD%95PyInstaller%E6%89%93%E5%8C%85%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E5%8F%82%E6%95%B0/"><img class="next-cover" src="http://images.shejidaren.com/wp-content/uploads/2014/07/085628zTl.jpg" onerror="onerror=null;src='/img/img1.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">记录PyInstaller打包常用命令参数</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span> 相关推荐</span></div><div class="relatedPosts-list"><div><a href="/2024/07/05/2024-07-05-记录删除通过yml文件生成的docker容器/" title="记录删除通过yml文件生成的docker容器"><img class="cover" src="http://pic1.win4000.com/wallpaper/f/5860af34d5340.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-05</div><div class="title">记录删除通过yml文件生成的docker容器</div></div></a></div><div><a href="/2022/12/30/CSS简单了解介绍/" title="CSS简单了解介绍"><img class="cover" src="http://images.shejidaren.com/wp-content/uploads/2014/07/085628zTl.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-30</div><div class="title">CSS简单了解介绍</div></div></a></div><div><a href="/2022/12/30/HTML复习笔记/" title="HTML复习笔记"><img class="cover" src="http://pic1.win4000.com/wallpaper/f/5860af34d5340.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-30</div><div class="title">HTML复习笔记</div></div></a></div><div><a href="/2022/12/30/Markdown学习笔记/" title="Markdown学习笔记"><img class="cover" src="http://images.shejidaren.com/wp-content/uploads/2014/07/085627Hqj.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-12-30</div><div class="title">Markdown学习笔记</div></div></a></div><div><a href="/2024/07/15/2024-07-15记录PyInstaller打包常用命令参数/" title="记录PyInstaller打包常用命令参数"><img class="cover" src="http://images.shejidaren.com/wp-content/uploads/2014/07/085628zTl.jpg" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-07-15</div><div class="title">记录PyInstaller打包常用命令参数</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%89%E7%BB%B4%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.</span> <span class="toc-text">三维文件格式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#abc"><span class="toc-number">2.</span> <span class="toc-text">.abc</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#glTF"><span class="toc-number">3.</span> <span class="toc-text">.glTF</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#fbx"><span class="toc-number">4.</span> <span class="toc-text">.fbx</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#bvh"><span class="toc-number">5.</span> <span class="toc-text">.bvh</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#obj"><span class="toc-number">6.</span> <span class="toc-text">.obj</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dae"><span class="toc-number">7.</span> <span class="toc-text">.dae</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#stl"><span class="toc-number">8.</span> <span class="toc-text">.stl</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3ds"><span class="toc-number">9.</span> <span class="toc-text">.3ds</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#ply"><span class="toc-number">10.</span> <span class="toc-text">.ply</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#psk"><span class="toc-number">11.</span> <span class="toc-text">.psk</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#x3d"><span class="toc-number">12.</span> <span class="toc-text">.x3d</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#dxf"><span class="toc-number">13.</span> <span class="toc-text">.dxf</span></a></li></ol></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2021 - 2024 By 戴昌益</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><div class="js-pjax"><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></div></body></html>
