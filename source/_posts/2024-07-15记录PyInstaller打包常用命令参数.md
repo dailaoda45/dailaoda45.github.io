@@ -1,10 +1,10 @@
 ---
 title: 记录PyInstaller打包常用命令参数
 author: 戴昌益
-date: 2024--07-15
-updated：2024--07-15
+date: 2024-07-15 15:52:07
 tags: [学习]
-categories: 文|技
+categories: 文
+
 ---
 
 ## 记录PyInstaller打包常用命令参数
