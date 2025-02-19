@@ -1,1 +1,0 @@
-cd /opt/blog/hexoblog && hexo clean && hexo g && hexo d
